@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-sheba - Wellness Clinic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">E-<span class="highlight">sheba</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#history">History</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="login">Log In</button>
+            <button class="signup">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Find & Search Your <span class="highlight">Favourite</span> Doctor</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="search-box">
+                <input type="text" placeholder="Doctor's Name">
+                <input type="text" placeholder="Location">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+        <img src="images/doctor.jpg" alt="Doctor" class="floating-doctor">
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-item">24/7 <br> Online Support</div>
+        <div class="stats-item">100+ <br> Doctors</div>
+        <div class="stats-item">1M+ <br> Active Patients</div>
+    </section>
+
+    <!-- Consulting Specialists -->
+    <section id="specialists" class="specialists">
+        <h2>Our Consulting Specialists</h2>
+        <div class="cards">
+            <div class="card active" onclick="toggleCard(this)">
+                <h3>Covid-19 Test</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Heart Lungs</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Supplement</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="card" onclick="toggleCard(this)">
+                <h3>Mental Health</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="choose-us">
+        <img src="images/surgery.jpg" alt="Surgery">
+        <div>
+            <h2>Why You Choose Us?</h2>
+            <ul>
+                <li>✔ High-quality medical care.</li>
+                <li>✔ 24/7 Support available.</li>
+                <li>✔ Experienced doctors & specialists.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews">
+        <h2>What Our Member’s Saying About Us</h2>
+        <div class="review-card">
+            <h3>Jane Cooper ⭐⭐⭐⭐⭐</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </section>
+
+    <!-- Future of Health -->
+    <section class="future-health">
+        <div>
+            <h2>The Future of <span class="highlight">Quality Health</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <img src="images/docP.jpg" alt="Doctor and Patient">
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Subscribe To Our Newsletter</h2>
+        <input type="email" placeholder="Enter your email">
+        <button>➡</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 E-sheba - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.auth-buttons button {
+    padding: 8px 15px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 30px 50px;
+    background: #e0ecff;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.floating-doctor {
+    width: 250px;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background: blue;
+    color: white;
+    padding: 20px;
+}
+
+/* Specialists */
+.specialists .cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .stats {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Why You Choose Us Section */
+.choose-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: #f9f9f9;
+}
+
+.choose-us img {
+    width: 45%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.choose-us div {
+    width: 50%;
+}
+
+/* Future of Health Section */
+.future-health {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: #e6f0ff;
+}
+
+.future-health img {
+    width: 45%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.future-health div {
+    width: 50%;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .choose-us, .future-health {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .choose-us img, .future-health img {
+        width: 100%;
+        max-height: auto;
+        margin-top: 20px;
+    }
+
+    .choose-us div, .future-health div {
+        width: 100%;
+    }
+}
