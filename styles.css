@@ -147,3 +147,50 @@ nav ul li {
         width: 100%;
     }
 }
+
+/* Header Navigation Active Effect */
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a.active {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Floating Doctor Animation */
+.floating-doctor {
+    width: 250px;
+    position: relative;
+    animation: floatAnimation 3s infinite ease-in-out;
+}
+
+@keyframes floatAnimation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Specialist Cards */
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.card.active {
+    background: blue;
+    color: white;
+    transform: scale(1.05);
+}
+
